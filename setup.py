@@ -17,11 +17,11 @@ setup(
 	],
 	python_requires=">=3.10",
 	entry_points={
-		"console_scripts": [
-			"create-batch=openai-batch-api.create_batch_and_submit:main",
-			"check-status=openai-batch-api.status_jobs:main",
-			"collate-output=openai-batch-api.collate_output:main",
-		],
+	    "console_scripts": [
+            "create-batch=batch_api.create_batch_and_submit:main",
+            "status-jobs=batch_api.status_jobs:main",
+            "collate-output=batch_api.collate_output:main",
+        ],
 	},
 	include_package_data=True,
 	package_data={
